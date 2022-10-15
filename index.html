@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5f4f527f42.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-wrapper">
+        <div class="weather-app">
+          <form class="mb-3">
+            <div class="row">
+              <div class="col-10">
+                <input
+                  type="search"
+                  placeholder="Enter a city"
+                  class="form-control"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-1">
+                <input type="submit" value="Search" class="btn btn-primary" />
+              </div>
+              <div class="col-1">
+                <input type="button" value="Current" class="btn btn-primary" />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <div class="row">
+              <div class="col-6">
+                <h1>New York</h1>
+                <ul>
+                  <li>15/10, Saturday</li>
+                  <li>13:12</li>
+                  <li>Clear</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <i class="fa-solid fa-sun"></i>
+                <strong>12°C</strong>
+                <ul>
+                  <li>Humidity: 70%</li>
+                  <li>Wind: 20m/s</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="weather-days">
+            <div class="row">
+              <div class="col">
+                <strong>Saturday</strong>
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <ul>
+                  <li>15°C</li>
+                  <li>4°C</li>
+                </ul>
+              </div>
+              <div class="col">
+                <strong>Sunday</strong>
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <ul>
+                  <li>15°C</li>
+                  <li>4°C</li>
+                </ul>
+              </div>
+              <div class="col">
+                <strong>Monday</strong>
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <ul>
+                  <li>15°C</li>
+                  <li>4°C</li>
+                </ul>
+              </div>
+              <div class="col">
+                <strong>Tuesday</strong>
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <ul>
+                  <li>15°C</li>
+                  <li>4°C</li>
+                </ul>
+              </div>
+              <div class="col">
+                <strong>Wednesday</strong>
+                <br />
+                <i class="fa-solid fa-sun"></i>
+                <ul>
+                  <li>15°C</li>
+                  <li>4°C</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <small>
+          <a href="#"> Source-code project </a>
+          , by Tetiana Sliusarenko
+        </small>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
