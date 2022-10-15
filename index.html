@@ -14,6 +14,12 @@
       src="https://kit.fontawesome.com/5f4f527f42.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -23,7 +29,7 @@
         <div class="weather-app">
           <form class="mb-3">
             <div class="row">
-              <div class="col-10">
+              <div class="col-8">
                 <input
                   type="search"
                   placeholder="Enter a city"
@@ -31,10 +37,10 @@
                   autocomplete="off"
                 />
               </div>
-              <div class="col-1">
+              <div class="col-2">
                 <input type="submit" value="Search" class="btn btn-primary" />
               </div>
-              <div class="col-1">
+              <div class="col-2">
                 <input type="button" value="Current" class="btn btn-primary" />
               </div>
             </div>
@@ -44,17 +50,17 @@
               <div class="col-6">
                 <h1>New York</h1>
                 <ul>
-                  <li>15/10, Saturday</li>
+                  <li>15/10, Sat</li>
                   <li>13:12</li>
                   <li>Clear</li>
                 </ul>
               </div>
               <div class="col-6">
                 <i class="fa-solid fa-sun"></i>
-                <strong>12°C</strong>
+                <span class="current-temp">12°C</span>
                 <ul>
-                  <li>Humidity: 70%</li>
-                  <li>Wind: 20m/s</li>
+                  <li>Humidity: <span class="info">70%</span></li>
+                  <li>Wind: <span class="info">20km/h</span></li>
                 </ul>
               </div>
             </div>
@@ -62,55 +68,65 @@
           <div class="weather-days">
             <div class="row">
               <div class="col">
-                <strong>Saturday</strong>
-                <br />
-                <i class="fa-solid fa-sun"></i>
-                <ul>
-                  <li>15°C</li>
-                  <li>4°C</li>
-                </ul>
+                <div class="temp-for-days">
+                  <strong>Sat</strong>
+                  <br />
+                  <i class="fa-solid fa-sun"></i>
+                  <ul>
+                    <li><span class="info">15°</span></li>
+                    <li><span class="info">4°</span></li>
+                  </ul>
+                </div>
               </div>
               <div class="col">
-                <strong>Sunday</strong>
-                <br />
-                <i class="fa-solid fa-sun"></i>
-                <ul>
-                  <li>15°C</li>
-                  <li>4°C</li>
-                </ul>
+                <div class="temp-for-days">
+                  <strong>Sun</strong>
+                  <br />
+                  <i class="fa-solid fa-sun"></i>
+                  <ul>
+                    <li><span class="info">15°</span></li>
+                    <li><span class="info">4°</span></li>
+                  </ul>
+                </div>
               </div>
               <div class="col">
-                <strong>Monday</strong>
-                <br />
-                <i class="fa-solid fa-sun"></i>
-                <ul>
-                  <li>15°C</li>
-                  <li>4°C</li>
-                </ul>
+                <div class="temp-for-days">
+                  <strong>Mon</strong>
+                  <br />
+                  <i class="fa-solid fa-sun"></i>
+                  <ul>
+                    <li><span class="info">15°</span></li>
+                    <li><span class="info">4°</span></li>
+                  </ul>
+                </div>
               </div>
               <div class="col">
-                <strong>Tuesday</strong>
-                <br />
-                <i class="fa-solid fa-sun"></i>
-                <ul>
-                  <li>15°C</li>
-                  <li>4°C</li>
-                </ul>
+                <div class="temp-for-days">
+                  <strong>Tue</strong>
+                  <br />
+                  <i class="fa-solid fa-sun"></i>
+                  <ul>
+                    <li><span class="info">15°</span></li>
+                    <li><span class="info">4°</span></li>
+                  </ul>
+                </div>
               </div>
               <div class="col">
-                <strong>Wednesday</strong>
-                <br />
-                <i class="fa-solid fa-sun"></i>
-                <ul>
-                  <li>15°C</li>
-                  <li>4°C</li>
-                </ul>
+                <div class="temp-for-days">
+                  <strong>Wed</strong>
+                  <br />
+                  <i class="fa-solid fa-sun"></i>
+                  <ul>
+                    <li><span class="info">15°</span></li>
+                    <li><span class="info">4°</span></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <small>
-          <a href="#"> Source-code project </a>
+          <a href="#"> Open-source project </a>
           , by Tetiana Sliusarenko
         </small>
       </div>

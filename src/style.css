@@ -1,0 +1,107 @@
+body {
+  font-family: "Baloo 2", cursive;
+  background-color: rgb(250, 240, 255);
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: rgb(33, 33, 33);
+}
+
+a {
+  color: rgb(181, 33, 255);
+  transition: all 200ms ease-in-out;
+}
+
+a:visited {
+  color: rgb(181, 33, 255);
+}
+
+a:hover {
+  color: rgb(181, 33, 255);
+}
+
+strong {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(174, 173, 187);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 20px;
+  color: rgb(174, 173, 187);
+}
+
+i {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+small {
+  margin-left: 25px;
+}
+
+.form-control {
+  min-width: 380px;
+  background-color: rgb(250, 240, 255);
+}
+
+.btn {
+  background-color: rgb(181, 33, 255);
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(154, 26, 218);
+}
+
+.col {
+  margin: 0px;
+  padding: 0px;
+}
+
+.temp-for-days {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.temp-for-days i {
+  font-size: 24px;
+}
+
+.info {
+  color: rgb(215, 61, 90);
+}
+
+.current-temp {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+}
+
+.weather-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgb(162, 125, 181);
+}
+
+.weather-app {
+  padding: 25px;
+  padding-bottom: 0px;
+}
