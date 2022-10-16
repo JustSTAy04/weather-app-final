@@ -8,6 +8,7 @@ let time = document.querySelector("#time");
 let otherDays = document.querySelectorAll("#dayOfWeek");
 let icon = document.querySelector("#icon");
 let daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let pos = document.querySelector("#position");
 
 function addZero(elem) {
   if (elem < 10) {
@@ -55,9 +56,21 @@ function displayTemp(response) {
   formatDate();
 }
 
+let apiKey = "46460ff7f6bd748e52ea94a2797a58ce";
 function search(city) {
-  let apiKey = "46460ff7f6bd748e52ea94a2797a58ce";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayTemp);
+}
+
+function currentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(handlePosition);
+}
+
+function handlePosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
   axios.get(apiUrl).then(displayTemp);
 }
 
@@ -71,3 +84,4 @@ search("New York");
 
 let form = document.querySelector("#searchForm");
 form.addEventListener("submit", handleSubmit);
+pos.addEventListener("click", currentLocation);
