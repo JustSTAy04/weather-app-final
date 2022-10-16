@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -44,19 +45,19 @@
           <div class="overview">
             <div class="row">
               <div class="col-6">
-                <h1>New York</h1>
+                <h1 id="cityName">New York</h1>
                 <ul>
-                  <li>15/10, Sat</li>
-                  <li>13:12</li>
-                  <li>Clear</li>
+                  <li id="day">15/10, Sat</li>
+                  <li id="time">13:12</li>
+                  <li id="desc">Clear</li>
                 </ul>
               </div>
               <div class="col-6">
                 <i class="fa-solid fa-sun"></i>
-                <span class="current-temp">12°C</span>
+                <span class="current-temp" id="currentTemp">12°C</span>
                 <ul>
-                  <li>Humidity: <span class="info">70%</span></li>
-                  <li>Wind: <span class="info">20km/h</span></li>
+                  <li>Humidity: <span class="info" id="humid">70%</span></li>
+                  <li>Wind: <span class="info" id="wind">20km/h</span></li>
                 </ul>
               </div>
             </div>

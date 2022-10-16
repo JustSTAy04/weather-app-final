@@ -42,6 +42,7 @@ li {
   font-weight: 100;
   line-height: 20px;
   color: rgb(174, 173, 187);
+  text-transform: capitalize;
 }
 
 i {
