@@ -1,6 +1,3 @@
-let apiKey = "46460ff7f6bd748e52ea94a2797a58ce";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&units=metric&appid=${apiKey}`;
-
 let city = document.querySelector("#cityName");
 let currentTemp = document.querySelector("#currentTemp");
 let desc = document.querySelector("#desc");
@@ -58,4 +55,19 @@ function displayTemp(response) {
   formatDate();
 }
 
-axios.get(apiUrl).then(displayTemp);
+function search(city) {
+  let apiKey = "46460ff7f6bd748e52ea94a2797a58ce";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  axios.get(apiUrl).then(displayTemp);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#cityInput");
+  search(cityInput.value);
+}
+
+search("New York");
+
+let form = document.querySelector("#searchForm");
+form.addEventListener("submit", handleSubmit);
