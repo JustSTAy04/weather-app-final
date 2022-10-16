@@ -7,7 +7,7 @@ h1 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 0;
-  color: rgb(33, 33, 33);
+  color: rgb(55, 55, 55);
 }
 
 a {
@@ -47,6 +47,7 @@ li {
 i {
   font-size: 36px;
   font-weight: 700;
+  color: rgb(55, 55, 55);
 }
 
 small {
@@ -54,13 +55,14 @@ small {
 }
 
 .form-control {
-  min-width: 380px;
+  max-width: 350px;
   background-color: rgb(250, 240, 255);
 }
 
 .btn {
   background-color: rgb(181, 33, 255);
   border: none;
+  margin: 0 8px;
   transition: all 200ms ease-in-out;
 }
 
@@ -84,13 +86,13 @@ small {
 }
 
 .info {
-  color: rgb(215, 61, 90);
+  color: rgb(215, 61, 182);
 }
 
 .current-temp {
   font-size: 40px;
   font-weight: 700;
-  color: rgb(33, 33, 33);
+  color: rgb(55, 55, 55);
 }
 
 .weather-wrapper {
