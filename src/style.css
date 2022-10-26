@@ -80,12 +80,16 @@ small {
   text-align: center;
 }
 
-.temp-for-days i {
-  font-size: 24px;
+.temp-for-days img {
+  max-width: 55px;
 }
 
-.info {
-  color: rgb(215, 61, 182);
+#maxTemp {
+  color: rgb(255, 33, 248);
+}
+
+#minTemp {
+  color: rgb(255, 89, 249);
 }
 
 .current-temp {
